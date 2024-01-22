@@ -31,19 +31,19 @@ void execute_file(stack_t **stack)
 void execute_opcode(char *opcode, stack_t **stack, unsigned int line_number)
 {
 	instruction_t instructions[] = {
-		{"push", op_push},
-		{"pall", op_pall},
-		{"pint", op_pint},
-		{"pop", op_pop},
-		{"swap", op_swap},
-		{"nop", op_nop},
-		{"add", op_add},
-		{"sub", op_sub},
-		{"div", op_div},
-		{"mul", op_mul},
-		{"mod", op_mod},
-		{"pchar", op_pchar},
-		{"pstr", op_pstr},
+		{"push", t_push},
+		{"pall", t_pall},
+		{"pint", t_pint},
+		{"pop", t_pop},
+		{"swap", t_swap},
+		{"nop", t_nop},
+		{"add", t_add},
+		{"sub", t_sub},
+		{"div", t_div},
+		{"mul", t_mul},
+		{"mod", t_mod},
+		{"pchar", t_pchar},
+		{"pstr", t_pstr},
 		{NULL, NULL}
 	};
 	int i;
